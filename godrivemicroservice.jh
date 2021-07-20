@@ -1,0 +1,57 @@
+
+application {
+  config {
+    baseName GoDriveGateway,
+    applicationType gateway,
+    packageName com.godrive,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName GoDriveMicroservice,
+    applicationType microservice,
+    packageName com.godrive,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Codes, Cars, Fleets
+}
+
+entity Codes {
+	mode String,
+	segment String,
+	code String,
+    size Float,
+    description String,
+    minVal String,
+    maxVal String,
+    units String,
+    enabled Boolean,
+    createdAt DateTime,
+    updatedAt DateTime,
+}
+
+entity Cars {
+	name String,
+	description String,
+    carPlate String,
+    vin String,
+    createdAt DateTime,
+    updatedAt DateTime,
+}
+
+entity Fleets {
+    name String,
+	description String,
+    createdAt DateTime,
+    updatedAt DateTime,
+}
+relationship OneToMany {
+  Fleets to Cars{fleetId},
+}
+    
