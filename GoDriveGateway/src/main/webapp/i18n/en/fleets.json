@@ -1,0 +1,28 @@
+{
+  "goDriveGatewayApp": {
+    "fleets": {
+      "home": {
+        "title": "Fleets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fleets",
+        "createOrEditLabel": "Create or edit a Fleets",
+        "notFound": "No Fleets found"
+      },
+      "created": "A new Fleets is created with identifier {{ param }}",
+      "updated": "A Fleets is updated with identifier {{ param }}",
+      "deleted": "A Fleets is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fleets {{ id }}?"
+      },
+      "detail": {
+        "title": "Fleets"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "cars": "Cars"
+    }
+  }
+}

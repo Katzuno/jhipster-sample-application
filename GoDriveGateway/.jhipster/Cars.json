@@ -1,0 +1,48 @@
+{
+  "name": "Cars",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "carPlate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "fleets",
+      "otherEntityRelationshipName": "cars",
+      "relationshipName": "fleetId"
+    }
+  ],
+  "entityTableName": "cars",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["GoDriveGateway", "GoDriveMicroservice"],
+  "databaseType": "sql",
+  "changelogDate": "20210720182737"
+}
