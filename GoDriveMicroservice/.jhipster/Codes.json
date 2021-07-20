@@ -1,0 +1,63 @@
+{
+  "name": "Codes",
+  "fields": [
+    {
+      "fieldName": "mode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "segment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dimension",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minVal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxVal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "units",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "codes",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["GoDriveGateway", "GoDriveMicroservice"],
+  "microserviceName": "GoDriveMicroservice",
+  "clientRootFolder": "GoDriveMicroservice",
+  "databaseType": "sql",
+  "changelogDate": "20210720182637"
+}
